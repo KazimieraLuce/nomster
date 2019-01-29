@@ -1,12 +1,11 @@
+<% will_paginate @collection, renderer: BootstrapPagination::Rails %>
 
-
-
-  <div class="digg_pagination">
+<div class="flickr_pagination">
     <div class="page_info">
       <%= page_entries_info @posts %>
     </div>
     <%= will_paginate @posts, :container => false %>
-  </div>
+</div>
 
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
