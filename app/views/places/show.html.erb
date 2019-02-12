@@ -3,10 +3,12 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <p><%= @place.description %></p>
+  <div id="caption_space">
   <% @place.photos.each do |photo| %>
     <%= image_tag photo.picture.url %>
     <%= photo.caption %>
   <% end %>
+  </div>
 
   <% if @place.latitude.present? && @place.longitude.present? %>
   
@@ -81,6 +83,8 @@
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal"> 
     Add a comment
   </button>
+
+
   <!-- Button trigger modal -->
   <!-- to get into photo modal -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModalphoto">

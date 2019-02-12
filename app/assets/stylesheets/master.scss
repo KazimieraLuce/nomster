@@ -8,8 +8,8 @@
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
 }
 
@@ -33,6 +33,12 @@
   padding: 2px 8px 2px 8px;
 }
 
+.btn {
+  padding: 2px;
+  margin: 4px;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
@@ -48,6 +54,10 @@ body {
 
 .clear {
   clear: both;
+}
+
+#caption_space {
+  margin: 10px;
 }
 
 blockquote {
@@ -67,4 +77,8 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+
+#myModalphoto {
+  clear: both;
 }
