@@ -3,11 +3,13 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <p><%= @place.description %></p>
-  <div id="caption_space">
-  <% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture.url %>
-    <%= photo.caption %>
-  <% end %>
+  <div>
+   <% @place.photos.each do |photo| %>
+    <figure class="figure">
+      <img src="<%= photo.picture.url %>" class="figure-img img-fluid rounded" alt="<%= photo.caption %>">
+      <figcaption class="figure-caption text-right"><%= photo.caption %></figcaption>
+    </figure>
+    <% end %>
   </div>
 
   <% if @place.latitude.present? && @place.longitude.present? %>

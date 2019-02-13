@@ -58,7 +58,7 @@ body {
   clear: both;
 }
 
-#caption_space {
+.caption_space {    /* tried as both id and class, neither worked */
   margin: 10px;
   display: inline-block;
 }
