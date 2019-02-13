@@ -6,8 +6,8 @@
   <div>
    <% @place.photos.each do |photo| %>
     <figure class="figure">
-      <img src="<%= photo.picture.url %>" class="figure-img img-fluid rounded" alt="<%= photo.caption %>">
-      <figcaption class="figure-caption text-right"><%= photo.caption %></figcaption>
+      <img class="snapshot" src="<%= photo.picture.url %>" class="figure-img img-fluid rounded" alt="<%= photo.caption %>">
+      <figcaption class="figure-caption text-center"><%= photo.caption %></figcaption>
     </figure>
     <% end %>
   </div>
@@ -75,23 +75,18 @@
   </div>
 </div>
 
-
-<!-- header below map for displaying comments -->
-<div class="col-10 offset-1"
-  <h1 class="float-left">Comments</h1>
-
-  <!-- Button trigger modal-->
-  <!-- to get into comment modal -->
+<!-- area below map -->
+<div class="col-10 offset-1">
+  <!-- Button trigger modal (to get into comment modal) -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal"> 
     Add a comment
   </button>
-
-
-  <!-- Button trigger modal -->
-  <!-- to get into photo modal -->
+  <!-- Button trigger (to get into photo modal) -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModalphoto">
     Add a Photo
   </button>
+  <!-- header below map for displaying comments -->
+    <h1 class="float-left display-4">Comments</h1>
 </div>
 
 <div class="clear"> </div>
@@ -124,6 +119,7 @@
 
 
 <div class="clear"></div>
+
 
 <div class="row">
 <% @place.comments.each do |comment| %>
