@@ -17,6 +17,7 @@
   background: image_url('dark_embroidery.png');
   box-shadow: 0px 3px 3px #190F87;
   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -24,6 +25,7 @@
   font-family: 'alfa_slab_oneregular';
   letter-spacing: -0.3px;
   font-size: 30px;
+  margin-bottom: 0;
 }
 
 .invalid-feedback {
@@ -58,6 +60,7 @@ body {
 
 #caption_space {
   margin: 10px;
+  display: inline-block;
 }
 
 blockquote {
@@ -82,3 +85,24 @@ blockquote p {
 #myModalphoto {
   clear: both;
 }
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
